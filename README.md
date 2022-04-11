@@ -24,31 +24,62 @@ If you find our work useful in your research, please cite our paper
 * pandas
 * yaml
 
+## File Structure
+```
+iaanet
+├─ box_generate.py
+├─ cGAN_data
+│  └─ training_box_gt.csv
+├─ detect.py
+├─ models
+│  ├─ attention.py
+│  ├─ backbone.py
+│  ├─ embedding.py
+│  └─ transformer.py
+├─ pretrained
+│  ├─ iaanet.pt
+│  └─ rpn.pt
+├─ test.py
+├─ train.py
+└─ utils
+   ├─ datasets.py
+   ├─ general.py
+   └─ loss.py
+
+```
 ## Dataset Preparation 
 * MDvsFA-cGAN Dataset[**[Link]**](https://github.com/wanghuanphd/MDvsFA_cGAN)
 * After unzip, dirs should be organized as:
-    * cGAN_data
-        * training
-            * 000000_1.png
-            * 000000_2.png
-            * ...
-            * 009999_1.png
-            * 009999_2.png
-        * test_org
-            * 00000.png
-            * ...
-            * 00099.png 
-        * test_gt
-            * 00000.png
-            * ...
-            * 00099.png 
+```
+cGAN_data
+├─ training
+│  ├─ 000000_1.png
+│  ├─ 000000_2.png
+│  ├─ ...
+│  ├─ 009999_1.png
+│  └─ 009999_2.png
+├─ test_org
+│  ├─ 00000.png
+│  ├─ ...
+│  └─ 00099.png 
+└─  test_gt
+   ├─ 00000.png
+   ├─ ...
+   └─ 00099.png 
+```
 * Following test dirs to organize validation set:
-    * cGAN_data
-        * val_org
-        * val_gt
+```
+cGAN_data
+├─ ...
+├─ val_org
+└─ val_gt
+```
 * Use our prepared bounding boxes ground truth directly 
-    * cGAN_data
-        * training_box_gt.csv
+```
+cGAN_data
+├─ ...
+└─ training_box_gt.csv
+```
 * Or run following command to generate bounding box ground truth from ground truth masks:
 ```
 python box_generate.py --path ./cGAN_data/training/ --save_path ./cGAN_data/training_box_gt.csv --bord 4
