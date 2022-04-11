@@ -74,11 +74,11 @@ Run in fast version:
 python test.py --weights ./pretrained/iaanet.pt --fast
 ```
 ## Inference
-Run following command to detect a single image
+Run following command to infer in a single image
 ```
 python detect.py --image_path img.png --save_path ./inference/ --weights ./pretrained/iaanet.pt
 ```
-Run following command to detect images in a folder
+Run following command to infer images in a folder
 ```
 python detect.py --image_path ./folder/ --save_path ./inference/ --weights ./pretrained/iaanet.pt --folder
 ```
