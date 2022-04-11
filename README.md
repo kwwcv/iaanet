@@ -41,7 +41,7 @@ If you find our work useful in your research, please cite our paper
             * 00000.png
             * ...
             * 00099.png 
-* Following test dirs to organize validation set as:
+* Following test dirs to organize validation set:
     * cGAN_data
         * val_org
         * val_gt
