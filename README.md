@@ -1,6 +1,6 @@
 # Interior Attention-Aware Network for Infrared Small Target Detection
 Official implementation for TGRS article "Interior Attention-Aware Network for Infrared Small Target Detection".
-[**[Link]**](https://ieeexplore.ieee.org/document/9745054)
+[**[Paper]**](https://ieeexplore.ieee.org/document/9745054)
 ## Citation
 If you find our work useful in your research, please cite our paper
 
