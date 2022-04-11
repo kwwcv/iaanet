@@ -56,6 +56,8 @@ python box_generate.py --path ./cGAN_data/training/ --save_path ./cGAN_data/trai
 
 
 ## Training
+The training and testing experiments are conducted using [PyTorch](https://github.com/pytorch/pytorch) with a single GeForce RTX 3090 GPU of 24 GB Memory.
+
 Run following command to train model from scratch
 ```
 python train.py --batch_size 8 --epochs 10 --save_path ./outputs/demo/
@@ -64,6 +66,7 @@ Start from pretraind RPN
 ```
 python train.py --rpn_pretrained ./pretrained/rpn.pt --save_path ./outputs/demo/
 ```
+Run `python train.py --help` for more configurations
 
 ## Testing
 Run our pretrained model for testing
@@ -74,6 +77,7 @@ Run in fast version:
 ```
 python test.py --weights ./pretrained/iaanet.pt --fast
 ```
+Run `python test.py --help` for more configurations
 ## Inference
 Run following command to infer a single image
 ```
@@ -87,3 +91,4 @@ Run in fast version
 ```
 python detect.py --fast
 ```
+Run `python detect.py --help` for more configurations
