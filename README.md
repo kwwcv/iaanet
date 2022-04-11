@@ -24,7 +24,7 @@ If you find our work useful in your research, please cite our paper
 * pandas
 
 ## Dataset Preparation 
-* [**[Link]**](https://github.com/wanghuanphd/MDvsFA_cGAN)
+* MDvsFA-cGAN Dataset[**[Link]**](https://github.com/wanghuanphd/MDvsFA_cGAN)
 * After unzip, dirs should be organized as:
     * cGAN_data
         * training
