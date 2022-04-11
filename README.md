@@ -82,3 +82,7 @@ Run following command to infer images in a folder
 ```
 python detect.py --image_path ./folder/ --save_path ./inference/ --weights ./pretrained/iaanet.pt --folder
 ```
+Run in fast version
+```
+python detect.py --fast
+```
