@@ -74,7 +74,7 @@ Run in fast version:
 python test.py --weights ./pretrained/iaanet.pt --fast
 ```
 ## Inference
-Run following command to infer in a single image
+Run following command to infer a single image
 ```
 python detect.py --image_path img.png --save_path ./inference/ --weights ./pretrained/iaanet.pt
 ```
