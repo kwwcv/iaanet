@@ -50,7 +50,7 @@ iaanet
 
 ```
 ## Dataset Preparation 
-* MDvsFA-cGAN Dataset [**[Link]**](https://github.com/wanghuanphd/MDvsFA_cGAN)
+* MDvsFA-cGAN Dataset [**[Dataset]**](https://github.com/wanghuanphd/MDvsFA_cGAN)
 [**[Paper]**](https://openaccess.thecvf.com/content_ICCV_2019/papers/Wang_Miss_Detection_vs._False_Alarm_Adversarial_Learning_for_Small_Object_ICCV_2019_paper.pdf)
 * After unzip, dirs should be organized as:
 ```
@@ -112,6 +112,12 @@ Run in fast version:
 python test.py --weights ./pretrained/iaanet.pt --fast
 ```
 Run `python test.py --help` for more configurations
+
+## Results
+We follow MDvsFA-cGAN to calculate F-measure [[Code](https://github.com/wanghuanphd/MDvsFA_cGAN/blob/master/demo_MDvsFA_pytorch.py)]
+| **Dataset** | **F-measure** | **Precision** | **Recall** |
+| :---: | :---: | :---: | :---: |
+| MDvsFA | 0.639 | 0.606 | 0.818 |
 ## Inference
 Run following command to infer a single image
 ```
