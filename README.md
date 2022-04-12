@@ -126,3 +126,6 @@ Run in fast version
 python detect.py --fast
 ```
 Run `python detect.py --help` for more configurations
+
+## License
+MIT License
