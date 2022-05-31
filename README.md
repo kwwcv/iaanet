@@ -92,7 +92,7 @@ python box_generate.py --path ./cGAN_data/training/ --save_path ./cGAN_data/trai
 ## Training
 The training and testing experiments are conducted using [PyTorch](https://github.com/pytorch/pytorch) with a single GeForce RTX 3090 GPU of 24 GB Memory.
 
-Run following command to train model from scratch
+Train from scratch
 ```
 python train.py --batch_size 8 --epochs 10 --save_path ./outputs/demo/
 ```
@@ -103,11 +103,11 @@ python train.py --rpn_pretrained ./pretrained/rpn.pt --save_path ./outputs/demo/
 Run `python train.py --help` for more configurations
 
 ## Testing
-Run our pretrained model for testing
+Use pretrained model for testing
 ```
 python test.py --weights ./pretrained/iaanet.pt
 ```
-Run in fast version:
+Fast version:
 ```
 python test.py --weights ./pretrained/iaanet.pt --fast
 ```
@@ -119,15 +119,15 @@ We follow MDvsFA-cGAN to calculate F-measure [[Code](https://github.com/wanghuan
 | :---: | :---: | :---: | :---: |
 | MDvsFA | 0.639 | 0.606 | 0.818 |
 ## Inference
-Run following command to infer a single image
+Infer a single image
 ```
 python detect.py --image_path img.png --save_path ./inference/ --weights ./pretrained/iaanet.pt
 ```
-Run following command to infer images in a folder
+Infer images in a folder
 ```
 python detect.py --image_path ./folder/ --save_path ./inference/ --weights ./pretrained/iaanet.pt --folder
 ```
-Run in fast version
+Fast version
 ```
 python detect.py --fast
 ```
