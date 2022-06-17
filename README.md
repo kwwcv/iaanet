@@ -107,7 +107,7 @@ Use pretrained model for testing
 ```
 python test.py --weights ./pretrained/iaanet.pt
 ```
-Fast version:
+Fast version (SG convs the proposed regions only. ):
 ```
 python test.py --weights ./pretrained/iaanet.pt --fast
 ```
