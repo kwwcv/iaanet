@@ -101,7 +101,7 @@ class attention(nn.Module):
                 boxes = tiny_filter(boxes)
                 boxes = boxes[:topk]
             
-            #At inference time, if detector proposed no region boxes, record and jump out.
+            #If detector proposed no region boxes, record and jump out (Inference).
             if (self.training==False) & (len(boxes)==0):
                 region_boxes_exists = False
                 break
