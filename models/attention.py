@@ -82,7 +82,7 @@ class attention(nn.Module):
         target_boxes = []
         max_words_num = 0
 
-        region_boxes_exists = True#using at inference time to judge whether detector find targets
+        region_boxes_exists = True#whether detector find targets (Inference)
         max_words_num = 0
         for i in range(b):
             r_boxes = region_boxes[i]
