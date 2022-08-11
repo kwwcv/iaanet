@@ -90,7 +90,7 @@ python box_generate.py --path ./cGAN_data/training/ --save_path ./cGAN_data/trai
 
 
 ## Training
-The training and testing experiments are conducted using [PyTorch](https://github.com/pytorch/pytorch) with a single GeForce RTX 3090 GPU of 24 GB Memory.
+Experiments are conducted using [PyTorch](https://github.com/pytorch/pytorch) with a single GeForce RTX 3090 GPU of 24 GB Memory.
 
 Train from scratch
 ```
