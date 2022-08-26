@@ -14,8 +14,6 @@ If you find our work useful in your research, please cite our paper
   }
 ```
 
-And if the implementation of this repo is helpful to you, just star it.
-
 ## Requirement
 **Packages:**
 * Python 3.8
