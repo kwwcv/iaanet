@@ -23,11 +23,11 @@ def calculateIoU(output_image, gt_image,thre):
     out_bin = output_image>thre
     gt_bin = gt_image>thre
     
-    iter = (gt_bin & out_bin).sum()
+    inter = (gt_bin & out_bin).sum()
     union = (gt_bin | out_bin).sum()
-    niou = iter / (union+1e-6)
+    niou = inter / (union+1e-6)
 
-    return iter, union, niou
+    return inter, union, niou
     
 def test(image_path, mask_path, model, device, conf_thres, iou_thres, expand, topk, fast):
     '''
