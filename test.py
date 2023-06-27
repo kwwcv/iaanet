@@ -16,6 +16,19 @@ def calculateF1Measure(output_image,gt_image,thre):
     F1 = 2*recall*prec/np.maximum(0.001,recall+prec)
     return prec, recall, F1
 
+# IoU for a single image
+def calculatenIoU(output_image, gt_image,thre):
+    output_image = np.squeeze(output_image)
+    gt_image = np.squeeze(gt_image)
+    out_bin = output_image>thre
+    gt_bin = gt_image>thre
+    
+    iter = (gt_bin & out_bin).sum()
+    union = (gt_bin | out_bin).sum()
+    niou = iter / (union+1e-6)
+
+    return iter, union, niou
+    
 def test(image_path, mask_path, model, device, conf_thres, iou_thres, expand, topk, fast):
     '''
     only support batch size = 1
