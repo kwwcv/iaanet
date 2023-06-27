@@ -17,7 +17,7 @@ def calculateF1Measure(output_image,gt_image,thre):
     return prec, recall, F1
 
 # IoU for a single image
-def calculatenIoU(output_image, gt_image,thre):
+def calculateIoU(output_image, gt_image,thre):
     output_image = np.squeeze(output_image)
     gt_image = np.squeeze(gt_image)
     out_bin = output_image>thre
