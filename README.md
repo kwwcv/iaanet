@@ -1,18 +1,9 @@
 # Interior Attention-Aware Network for Infrared Small Target Detection
 Official implementation for IEEE Transactions on Geoscience and Remote Sensing (TGRS) paper: "Interior Attention-Aware Network for Infrared Small Target Detection".
 [**[Paper]**](https://ieeexplore.ieee.org/document/9745054)
-## Citation
-If you find our work useful in your research, please cite our paper
 
-```
-@ARTICLE{9745054,
-  author={Wang, Kewei and Du, Shuaiyuan and Liu, Chengxin and Cao, Zhiguo},
-  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={Interior Attention-Aware Network for Infrared Small Target Detection}, 
-  year={2022},
-  doi={10.1109/TGRS.2022.3163410}
-  }
-```
+## News ##
+I plan to reorganize the code and provide a more friendly model version.
 
 ## Requirement
 **Packages:**
@@ -86,7 +77,6 @@ cGAN_data
 python box_generate.py --path ./cGAN_data/training/ --save_path ./cGAN_data/training_box_gt.csv --bord 4
 ```
 
-
 ## Training
 Experiments are conducted using [PyTorch](https://github.com/pytorch/pytorch) with a single GeForce RTX 3090 GPU of 24 GB Memory.
 
@@ -128,6 +118,19 @@ python detect.py --image_path ./folder/ --save_path ./inference/ --weights ./pre
 Fast version
 ```
 python detect.py --fast
+```
+
+## Citation
+If you find our work useful in your research, please cite our paper
+
+```
+@ARTICLE{9745054,
+  author={Wang, Kewei and Du, Shuaiyuan and Liu, Chengxin and Cao, Zhiguo},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Interior Attention-Aware Network for Infrared Small Target Detection}, 
+  year={2022},
+  doi={10.1109/TGRS.2022.3163410}
+  }
 ```
 Run `python detect.py --help` for more configurations
 
