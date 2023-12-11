@@ -3,7 +3,7 @@ Official implementation for IEEE Transactions on Geoscience and Remote Sensing (
 [**[Paper]**](https://ieeexplore.ieee.org/document/9745054)
 
 ## News ##
-I plan to reorganize the code and provide a more friendly model version.
+[2023/12/11] I plan to reorganize the code and provide a more friendly model version.
 
 ## Requirement
 **Packages:**
@@ -119,6 +119,7 @@ Fast version
 ```
 python detect.py --fast
 ```
+Run `python detect.py --help` for more configurations
 
 ## Citation
 If you find our work useful in your research, please cite our paper
@@ -132,7 +133,6 @@ If you find our work useful in your research, please cite our paper
   doi={10.1109/TGRS.2022.3163410}
   }
 ```
-Run `python detect.py --help` for more configurations
 
 ## License
 MIT License
